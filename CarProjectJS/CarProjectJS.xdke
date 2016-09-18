@@ -1,0 +1,80 @@
+{
+  "project": {
+    "projectSettingsVersion": "3.0.0",
+    "currentBuildConfiguration": null,
+    "projectFiles": {},
+    "projectDirectories": {}
+  },
+  "editorTab": {
+    "currentEditorMode": 0
+  },
+  "iot-tab": {
+    "fileStatus": {
+      "CarProjectJS.xdk": {
+        "previousModTime": 1474163491921,
+        "modified": 1474163491921,
+        "seen": true,
+        "name": "CarProjectJS.xdk"
+      },
+      "CarProjectJS.xdke": {
+        "previousModTime": 1474191785111,
+        "modified": 1474191785111,
+        "seen": true,
+        "name": "CarProjectJS.xdke"
+      },
+      "icon.png": {
+        "previousModTime": 1474163491445,
+        "modified": 1474163491445,
+        "seen": true,
+        "name": "icon.png"
+      },
+      "main.js": {
+        "previousModTime": 1474191837963,
+        "modified": 1474191837963,
+        "seen": true,
+        "name": "main.js"
+      },
+      "package.json": {
+        "previousModTime": 1474163491447,
+        "modified": 1474163491447,
+        "seen": true,
+        "name": "package.json"
+      },
+      "README.md": {
+        "previousModTime": 1474163491445,
+        "modified": 1474163491445,
+        "seen": true,
+        "name": "README.md"
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1474163491838,
+        "modified": 1474163491838,
+        "seen": true,
+        "name": "xdk/project-info.json"
+      },
+      "mainGood": {
+        "previousModTime": 1474177205868,
+        "modified": 1474177205868,
+        "seen": true,
+        "name": "mainGood"
+      },
+      "temp.js": {
+        "previousModTime": 1474177217051,
+        "modified": 1474177217051,
+        "seen": true,
+        "name": "temp.js"
+      },
+      "mainTEMP": {
+        "previousModTime": 1474185896938,
+        "modified": 1474185896938,
+        "seen": true,
+        "name": "mainTEMP"
+      }
+    },
+    "boardFileStatus": {
+      "main.js": {
+        "previousModTime": 1474191838322
+      }
+    }
+  }
+}

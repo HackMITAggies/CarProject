@@ -1,0 +1,72 @@
+/*jslint node:true, vars:true, bitwise:true, unparam:true */
+/*jshint unused:true */
+/*jshint esnext: true */
+// Leave the above lines for propper jshinting
+//Type Node.js Here :)\
+var firebase = require("firebase");
+var five = require("johnny-five");
+var Edison = require("galileo-io");
+var board = new five.Board({
+        io: new Edison()
+});
+
+var mraa = require('mraa'); //require mraa
+console.log('MRAA Version: ' + mraa.getVersion()); //print out the mraa version in IoT XDK console
+
+//Intel(R) Edison & Intel(R) Galileo 
+u = new mraa.Uart(0); //Default
+
+var serialPath = "/dev/ttyGS0";
+
+var SerialPort = require("serialport").SerialPort;
+var serialPort = new SerialPort(serialPath, {
+    baudrate: 9600
+});
+
+board.on("ready", () => {
+  //var lcd = new five.LCD({
+   // controller: "JHD1313M1"
+  //});
+    
+  //lcd.bgColor("white");
+  //lcd.print("Hello World!");
+    
+    // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC6Twgb_m-6gJLp7KCLG6PgaShMc1O_b20",
+    authDomain: "hackmit-e9161.firebaseapp.com",
+    databaseURL: "https://hackmit-e9161.firebaseio.com",
+    storageBucket: "hackmit-e9161.appspot.com",
+    messagingSenderId: "254290983004"
+  };
+  firebase.initializeApp(config);
+  // Set up references
+  var databaseRef = firebase.database().ref();
+  //var storageRef = firebase.storage().ref();
+  var auth = firebase.auth();
+    
+  //databaseRef.set({
+  //    status: {
+  //      message: "San Francisco"
+  //    }
+  //});
+    
+  databaseRef.child("status/message").on("value", function(snapshot) {
+    //lcd.clear();
+    //lcd.home().print(snapshot.val());
+  });
+
+  serialPort.on("open",function() {
+    console.log("open");
+    console.log("Connected to "+serialPath);
+    serialPort.on("data", function(data) { //Read available data from serial port
+        console.log("data received: " + data);
+    });
+    serialPort.write("This is a test.\n", function(err, results) { //Write data
+        console.log("err " + err);
+        console.log("results " + results);
+    });
+});
+    
+
+});

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Car Project</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="primaryKey">9254393ce7a94732a0b5d094360ab614</string>
+    <string name="secondaryKey">ba0fd3a41ea541b29c69fb077a756e8b</string>
+</resources>

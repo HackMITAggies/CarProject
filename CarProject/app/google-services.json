@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "254290983004",
+    "firebase_url": "https://hackmit-e9161.firebaseio.com",
+    "project_id": "hackmit-e9161",
+    "storage_bucket": "hackmit-e9161.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254290983004:android:d117a6b5d8d81113",
+        "android_client_info": {
+          "package_name": "carproject.hackmitaggies.com.github.carproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "254290983004-aii5u3thchhbrer0eotddt4ejm6jo67h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGw0Ej44dlhtIsPQ3A-YcatPTFMduVl1g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
